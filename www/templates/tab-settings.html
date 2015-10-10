@@ -1,0 +1,48 @@
+<ion-view view-title="AD&I Knowledge Bites">
+ <ion-content class="padding has-header"> 
+ 	<div data-role="main" class="ui-content">
+ 	
+		<div class="list">
+		<form name="SettingsForm" ng-submit="register();" novalidate>
+			<label class="item item-input">
+  			<!-- First Name -->
+				<div class="form-group" ng-class="{ 'has-error' : myForm.firstName.$invalid && !myForm.firstName.$pristine }" >
+	    			<span class="input-label">First Name: </span>
+	    			<input type="text" name="firstName" class="form-control" ng-model="user.firstName" required/>
+	    			<p ng-show="myForm.firstName.$invalid && !myForm.firstName.$pristine" style="color:red">First name is required.</p>
+       			</div>       
+       		</label>
+
+
+  			<label class="item item-input">     
+       		<!-- LAST Name -->
+				<div class="form-group" ng-class="{ 'has-error' : myForm.lastName.$invalid && !myForm.lastName.$pristine }">
+				    <span class="input-label">Last Name: </span>
+				    <input type="text" name="lastName" class="form-control" ng-model="user.lastName" ng-minlength="3" ng-maxlength="8">
+				    <p ng-show="myForm.lastName.$error.minlength" style="color:red">Last Name is too short.</p>
+	        	</div>
+	     	</label>
+	     	
+			<label class="item item-input">     	         
+			<!-- EMAIL -->
+				<div class="form-group" ng-class="{ 'has-error' : myForm.email.$invalid && !myForm.email.$pristine }">
+				    <span class="input-label">Email: </span>
+				    <input type="email" name="email" class="form-control" ng-model="user.email" required>
+				    <p ng-show="myForm.email.$invalid && !myForm.email.$pristine" style="color:red">Enter a valid email.</p>
+				</div>
+			</label>
+         
+			<label class="item item-input">				
+        		<button type="submit" class="btn btn-primary" ng-disabled="myForm.$invalid">Submit</button>
+       	 	</label>
+        </form>
+		</div>        	 
+		
+		<br/>
+		<br/>
+		
+		{{ txt }}  
+    
+	</div>   
+  </ion-content>
+</ion-view>

@@ -1,0 +1,42 @@
+{
+    "com.ibm.mobile.cordova.ibmbluemix": {
+        "source": {
+            "type": "registry",
+            "id": "com.ibm.mobile.cordova.ibmbluemix"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.ibm.mobile.cordova.ibmcloudcode": {
+        "source": {
+            "type": "registry",
+            "id": "com.ibm.mobile.cordova.ibmcloudcode"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.ibm.mobile.cordova.ibmdata": {
+        "source": {
+            "type": "registry",
+            "id": "com.ibm.mobile.cordova.ibmdata"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "com.ibm.mobile.cordova.ibmpush": {
+        "source": {
+            "type": "registry",
+            "id": "com.ibm.mobile.cordova.ibmpush"
+        },
+        "is_top_level": true,
+        "variables": {}
+    },
+    "cordova-plugin-whitelist": {
+        "source": {
+            "type": "registry",
+            "id": "cordova-plugin-whitelist@1"
+        },
+        "is_top_level": true,
+        "variables": {}
+    }
+}
